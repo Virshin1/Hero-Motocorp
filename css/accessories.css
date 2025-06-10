@@ -1,0 +1,129 @@
+/* Accessories Page Styles */
+
+.accessories-hero {
+    height: 50vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://image.isu.pub/190710062704-99435179dae62022955c891065c3fe23/jpg/page_1.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 70px; /* Adjust based on header height */
+}
+
+.accessories-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.accessories-hero p {
+    font-size: 1.5rem;
+}
+
+/* Accessories Grid */
+.accessories-grid {
+    padding: 4rem 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.accessory-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.accessory-card:hover {
+    transform: translateY(-5px);
+}
+
+.accessory-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.accessory-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Use contain to show full image without cropping */
+}
+
+.accessory-info {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.accessory-info h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.accessory-info .price {
+    font-weight: 700;
+    color: #e4002b;
+    margin-bottom: 1rem;
+}
+
+.accessory-info .features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.accessory-info .features span {
+    background-color: #f0f0f0;
+    padding: 0.3rem 0.6rem;
+    border-radius: 3px;
+}
+
+.accessory-card .know-more-btn {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    margin: 15px auto 0;
+    margin-bottom: 10px;
+    width: fit-content;
+    align-self: center;
+}
+
+.accessory-card .know-more-btn:hover {
+    background-color: #cc0000;
+}
+
+/* Responsive Design for Accessories Page */
+@media (max-width: 768px) {
+    .accessories-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .accessories-hero p {
+        font-size: 1.2rem;
+    }
+
+    .accessories-grid {
+        grid-template-columns: 1fr;
+    }
+} 

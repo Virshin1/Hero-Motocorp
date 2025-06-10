@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motorcycles - Hero MotoCorp</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/motorcycles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="main-nav">
+            <div class="logo">
+                <a href="index.html"><img src="https://www.heromotocorp.com/content/dam/hero-aem-website/brand/logo/logo.svg" alt="Hero MotoCorp Logo"></a>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="motorcycles.html" class="active">Motorcycles</a></li>
+                    <li><a href="scooters.html">Scooters</a></li>
+                    <li><a href="accessories.html">Accessories</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="nav-buttons">
+                <button class="login-btn">Login</button>
+                <button class="find-dealer-btn">Find a Dealer</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Motorcycles Hero Section -->
+    <section class="motorcycles-hero">
+        <h1>Our Motorcycle Range</h1>
+        <p>Discover the perfect ride for your journey</p>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="filter-container">
+            <div class="filter-group">
+                <label for="category">Category</label>
+                <select>
+                    <option>All Categories</option>
+                    <option>Sports</option>
+                    <option>Commuter</option>
+                    <option>Premium</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="price">Price Range</label>
+                <select>
+                    <option>All Prices</option>
+                    <option>Under ₹50,000</option>
+                    <option>₹50,000 - ₹1,00,000</option>
+                    <option>Above ₹1,00,000</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="engine">Engine Capacity</label>
+                <select>
+                    <option>All Engines</option>
+                    <option>100cc - 125cc</option>
+                    <option>125cc - 150cc</option>
+                    <option>Above 150cc</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Motorcycles Grid -->
+    <section class="motorcycles-grid">
+        <div class="motorcycle-card" data-category="sports" data-price="100000+" data-engine="150+">
+            <div class="motorcycle-image">
+                <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/1/versions/--stealth-20241725952803283.jpg?q=80" alt="Xtreme 160R">
+            </div>
+            <div class="motorcycle-info">
+                <h3>Xtreme 160R</h3>
+                <div class="specs">
+                    <span>160cc</span>
+                    <span>Sports</span>
+                </div>
+                <p class="price">Starting at ₹1,19,900</p>
+                <div class="features">
+                    <span>4V Engine</span>
+                    <span>LED Headlamp</span>
+                    <span>Digital Console</span>
+                </div>
+                <button class="know-more-btn">Know More</button>
+            </div>
+        </div>
+
+        <div class="motorcycle-card" data-category="commuter" data-price="50000-100000" data-engine="100-125">
+            <div class="motorcycle-image">
+                <img src="https://imgd.aeplcdn.com/664x374/n/bw/models/colors/hero-select-model-blue-black-1706531445236.png?q=80" alt="Splendor Plus">
+            </div>
+            <div class="motorcycle-info">
+                <h3>Splendor Plus</h3>
+                <div class="specs">
+                    <span>110cc</span>
+                    <span>Commuter</span>
+                </div>
+                <p class="price">Starting at ₹70,900</p>
+                <div class="features">
+                    <span>i3S Technology</span>
+                    <span>LED Tail Lamp</span>
+                    <span>Digital Speedometer</span>
+                </div>
+                <button class="know-more-btn">Know More</button>
+            </div>
+        </div>
+
+        <div class="motorcycle-card" data-category="premium" data-price="100000+" data-engine="150+">
+            <div class="motorcycle-image">
+                <img src="https://www.carbike360.com/_next/image?url=https%3A%2F%2Fs3.ap-south-1.amazonaws.com%2Fcb360static%2Fuploads%2Fc00f582a-55f9-4b79-9f4d-3f70c061c6de-small-New%2520Project.webp&w=3840&q=75" alt="XPulse 200">
+            </div>
+            <div class="motorcycle-info">
+                <h3>XPulse 200</h3>
+                <div class="specs">
+                    <span>200cc</span>
+                    <span>Adventure</span>
+                </div>
+                <p class="price">Starting at ₹1,28,900</p>
+                <div class="features">
+                    <span>Off-road Ready</span>
+                    <span>Long Travel Suspension</span>
+                    <span>ABS</span>
+                </div>
+                <button class="know-more-btn">Know More</button>
+            </div>
+        </div>
+
+        <div class="motorcycle-card" data-category="premium" data-price="100000+" data-engine="150+">
+            <div class="motorcycle-image">
+                <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/1/versions/hero-karizma-xmr-base1744051674540.jpg?q=80" alt="Karizma XMR">
+            </div>
+            <div class="motorcycle-info">
+                <h3>Karizma XMR</h3>
+                <div class="specs">
+                    <span>210cc</span>
+                    <span>Premium</span>
+                </div>
+                <p class="price">Starting at ₹1,72,000</p>
+                <div class="features">
+                    <span>Liquid Cooled</span>
+                    <span>LED Lighting</span>
+                    <span>Dual Channel ABS</span>
+                </div>
+                <button class="know-more-btn">Know More</button>
+            </div>
+        </div>
+
+        <div class="motorcycle-card" data-category="commuter" data-price="50000-100000" data-engine="100-125">
+            <div class="motorcycle-image">
+                <img src="https://imgd.aeplcdn.com/664x374/n/bw/models/colors/hero-select-model-black-and-accent-1707133727019.png?q=80" alt="Super Splendor">
+            </div>
+            <div class="motorcycle-info">
+                <h3>Super Splendor</h3>
+                <div class="specs">
+                    <span>125cc</span>
+                    <span>Commuter</span>
+                </div>
+                <p class="price">Starting at ₹75,900</p>
+                <div class="features">
+                    <span>i3S Technology</span>
+                    <span>LED Tail Lamp</span>
+                    <span>Digital Speedometer</span>
+                </div>
+                <button class="know-more-btn">Know More</button>
+            </div>
+        </div>
+
+        <div class="motorcycle-card" data-category="sports" data-price="100000+" data-engine="150+">
+            <div class="motorcycle-image">
+                <img src="https://imgd.aeplcdn.com/664x374/n/bw/models/colors/hero-select-model-pearl-red-1707141921031.png?q=80" alt="Xtreme 160R 4V">
+            </div>
+            <div class="motorcycle-info">
+                <h3>Xtreme 160R 4V</h3>
+                <div class="specs">
+                    <span>160cc</span>
+                    <span>Sports</span>
+                </div>
+                <p class="price">Starting at ₹1,24,900</p>
+                <div class="features">
+                    <span>4V Engine</span>
+                    <span>LED Headlamp</span>
+                    <span>Digital Console</span>
+                </div>
+                <button class="know-more-btn">Know More</button>
+            </div>
+        </div>
+
+        <div class="motorcycle-card" data-category="commuter" data-price="0-50000" data-engine="100-125">
+            <div class="motorcycle-image">
+                <img src="https://imgd.aeplcdn.com/664x374/n/bw/models/colors/hero-select-model-blue-black-1707131824745.png?q=80" alt="HF Deluxe">
+            </div>
+            <div class="motorcycle-info">
+                <h3>HF Deluxe</h3>
+                <div class="specs">
+                    <span>100cc</span>
+                    <span>Commuter</span>
+                </div>
+                <p class="price">Starting at ₹49,900</p>
+                <div class="features">
+                    <span>i3S Technology</span>
+                    <span>Economical</span>
+                    <span>Reliable</span>
+                </div>
+                <button class="know-more-btn">Know More</button>
+            </div>
+        </div>
+
+        <div class="motorcycle-card" data-category="premium" data-price="100000+" data-engine="150+">
+            <div class="motorcycle-image">
+                <img src="https://imgd.aeplcdn.com/664x374/n/bw/models/colors/hero-select-model-sports-red-1707139187405.png?q=80" alt="XPulse 200 4V">
+            </div>
+            <div class="motorcycle-info">
+                <h3>XPulse 200 4V</h3>
+                <div class="specs">
+                    <span>200cc</span>
+                    <span>Adventure</span>
+                </div>
+                <p class="price">Starting at ₹1,35,900</p>
+                <div class="features">
+                    <span>4V Engine</span>
+                    <span>Off-road Ready</span>
+                    <span>Dual Channel ABS</span>
+                </div>
+                <button class="know-more-btn">Know More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="">Board of Directors</a></li>
+                    <li><a href="">Leadership Team</a></li>
+                    <li><a href="">Key Policies</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Service Network</a></li>
+                    <li><a href="">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <div class="social-links">
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&#169; 2024 Hero MotoCorp Ltd. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html> 

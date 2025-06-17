@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Service - Hero MotoCorp</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/product-forms.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="main-nav">
+            <div class="logo">
+                <a href="../index.html"><img src="https://www.heromotocorp.com/content/dam/hero-aem-website/brand/logo/logo.svg" alt="Hero MotoCorp Logo"></a>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="../motorcycles.html">Motorcycles</a></li>
+                    <li><a href="../scooters.html">Scooters</a></li>
+                    <li><a href="../accessories.html">Accessories</a></li>
+                    <li><a href="../comparison.html">Compare</a></li>
+                    <li><a href="../pricing.html">Pricing</a></li>
+                    <li><a href="../service.html">Service</a></li>
+                    <li><a href="../about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="nav-buttons">
+                <a href="../forms/test-ride.html" class="login-btn">Book a Test Ride</a>
+                <a href="../forms/find-dealer.html" class="find-dealer-btn">Find a Dealer</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Service Appointment Form Section -->
+    <section class="form-container">
+        <h1>Book a Service Appointment</h1>
+        <p>Fill out the form below to schedule a service appointment for your Hero vehicle.</p>
+
+        <form class="service-form" id="serviceForm">
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="form-group">
+                <label for="vehicleModel">Vehicle Model</label>
+                <input type="text" id="vehicleModel" name="vehicleModel" placeholder="e.g., Xtreme 160R, Pleasure Plus" required>
+            </div>
+            <div class="form-group">
+                <label for="serviceType">Type of Service</label>
+                <select id="serviceType" name="serviceType" required>
+                    <option value="">Select Service Type</option>
+                    <option value="regular">Regular Service</option>
+                    <option value="repair">Repair</option>
+                    <option value="breakdown">Breakdown Assistance</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Preferred Date & Time</label>
+                <input type="date" id="serviceDate" name="serviceDate" required>
+                <input type="time" id="serviceTime" name="serviceTime" required>
+            </div>
+            <div class="form-group">
+                <label for="comments">Additional Comments</label>
+                <textarea id="comments" name="comments" placeholder="Describe any specific issues or requests"></textarea>
+            </div>
+            <button type="submit" class="form-submit-btn">Submit Appointment</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="../about/board-of-directors.html">Board of Directors</a></li>
+                    <li><a href="../about/leadership-team.html">Leadership Team</a></li>
+                    <li><a href="../about/key-policies.html">Key Policies</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="../support/contact-us.html">Contact Us</a></li>
+                    <li><a href="../support/service-network.html">Service Network</a></li>
+                    <li><a href="../support/faqs.html">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/HeroMotoCorpIndia/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/HeroMotoCorp"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/heromotocorp"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/user/TheHeromotocorp"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&#169; 2024 Hero MotoCorp Ltd. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+      document.getElementById('serviceForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        Swal.fire({
+          title: "Submited!",
+          text: "You have now submitted your service form",
+          icon: "success"
+        });
+      });
+    </script>
+</body>
+</html> 

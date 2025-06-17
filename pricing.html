@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - Hero MotoCorp</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pricing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="main-nav">
+            <div class="logo">
+                <a href="index.html"><img src="https://www.heromotocorp.com/content/dam/hero-aem-website/brand/logo/logo.svg" alt="Hero MotoCorp Logo"></a>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="motorcycles.html">Motorcycles</a></li>
+                    <li><a href="scooters.html">Scooters</a></li>
+                    <li><a href="accessories.html">Accessories</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="nav-buttons">
+                <a href="forms/test-ride.html" class="login-btn">Book a Test Ride</a>
+                <a href="forms/find-dealer.html" class="find-dealer-btn">Find a Dealer</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Pricing Hero Section -->
+    <section class="pricing-hero">
+        <h1>Pricing & Offers</h1>
+        <p>Explore our transparent pricing, exciting offers, and financing options.</p>
+    </section>
+
+    <!-- Pricing Tiers Section -->
+    <section class="pricing-tiers">
+        <div class="tier-card">
+            <h3>Standard Pricing</h3>
+            <p class="description">Base prices for all models without any current offers.</p>
+            <div class="price-list">
+                <div class="price-item">
+                    <h4>Xtreme 160R</h4>
+                    <p class="price">₹1,24,000</p>
+                </div>
+                <div class="price-item">
+                    <h4>Splendor Plus</h4>
+                    <p class="price">₹75,000</p>
+                </div>
+                <div class="price-item">
+                    <h4>Pleasure Plus</h4>
+                    <p class="price">₹65,000</p>
+                </div>
+            </div>
+            <a href="motorcycles.html" class="cta-button">View All Models</a>
+        </div>
+        <div class="tier-card">
+            <h3>Current Offers</h3>
+            <p class="description">Check out the latest discounts and special deals.</p>
+            <div class="offers-list">
+                <div class="offer-item">
+                    <h4>Festival Special</h4>
+                    <p>Up to ₹5,000 off on select models</p>
+                    <p class="validity">Valid till 31st March 2024</p>
+                </div>
+                <div class="offer-item">
+                    <h4>Exchange Bonus</h4>
+                    <p>Get ₹3,000 extra on your old two-wheeler</p>
+                    <p class="validity">Valid till 30th April 2024</p>
+                </div>
+            </div>
+            <button class="cta-button">See All Offers</button>
+        </div>
+        <div class="tier-card">
+            <h3>EMI Calculator</h3>
+            <p class="description">Calculate your monthly EMI payments.</p>
+            <div class="financing-calculator" id="financing-calculator">
+                <form class="calculator-form" onsubmit="return false;">
+                    <div class="form-group">
+                        <label for="bike-price">Bike Price (₹)</label>
+                        <input type="number" id="bike-price" value="75000" min="10000" step="1000" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="down-payment">Down Payment (₹)</label>
+                        <input type="number" id="down-payment" value="15000" min="0" step="500" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tenure">Loan Tenure</label>
+                        <select id="tenure"></select>
+                    </div>
+                </form>
+                <div class="calculation-results">
+                    <div class="result-item">
+                        <span>Monthly EMI</span>
+                        <span id="emi-amount">₹0</span>
+                    </div>
+                    <div class="result-item">
+                        <span>Total Interest</span>
+                        <span id="total-interest">₹0</span>
+                    </div>
+                    <div class="result-item">
+                        <span>Total Amount</span>
+                        <span id="total-amount">₹0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Offers Section -->
+    <section class="featured-offers">
+        <h2>Featured Discounts & Promotions</h2>
+        <div class="offers-grid">
+            <div class="offer-card">
+                <img src="https://via.placeholder.com/300x200" alt="Festival Offer">
+                <h3>Festival Special</h3>
+                <p>Up to ₹5,000 off on select models!</p>
+                <p class="offer-details">Valid on Xtreme 160R, Splendor Plus, and Pleasure Plus</p>
+                <a href="forms/test-ride.html" class="offer-cta">Book Now</a>
+            </div>
+            <div class="offer-card">
+                <img src="https://via.placeholder.com/300x200" alt="Exchange Offer">
+                <h3>Exchange Bonus</h3>
+                <p>Get extra value for your old two-wheeler</p>
+                <p class="offer-details">Additional ₹3,000 on exchange of any two-wheeler</p>
+                <a href="forms/find-dealer.html" class="offer-cta">Find Dealer</a>
+            </div>
+            <div class="offer-card">
+                <img src="https://via.placeholder.com/300x200" alt="EMI Offer">
+                <h3>Low EMI Schemes</h3>
+                <p>Attractive financing options starting from ₹999/month</p>
+                <p class="offer-details">Available on all models with flexible tenure</p>
+                <a href="#" class="offer-cta" onclick="document.querySelector('.emi-calculator').scrollIntoView()">Calculate EMI</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="about/board-of-directors.html">Board of Directors</a></li>
+                    <li><a href="about/leadership-team.html">Leadership Team</a></li>
+                    <li><a href="about/key-policies.html">Key Policies</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="support/contact-us.html">Contact Us</a></li>
+                    <li><a href="support/service-network.html">Service Network</a></li>
+                    <li><a href="support/faqs.html">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/HeroMotoCorpIndia/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/HeroMotoCorp"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/heromotocorp"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/user/TheHeromotocorp"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&#169; 2024 Hero MotoCorp Ltd. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- EMI Calculator Script -->
+    <script src="js/financing-calculator.js"></script>
+    <script src="js/vehicle-advisor.js"></script>
+</body>
+</html> 

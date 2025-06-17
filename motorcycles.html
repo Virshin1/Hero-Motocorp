@@ -20,13 +20,15 @@
                     <li><a href="motorcycles.html" class="active">Motorcycles</a></li>
                     <li><a href="scooters.html">Scooters</a></li>
                     <li><a href="accessories.html">Accessories</a></li>
+                    <li><a href="comparison.html">Compare</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
                     <li><a href="service.html">Service</a></li>
                     <li><a href="about.html">About Us</a></li>
                 </ul>
             </div>
             <div class="nav-buttons">
-                <button class="login-btn">Login</button>
-                <button class="find-dealer-btn">Find a Dealer</button>
+                <a href="forms/test-ride.html" class="login-btn">Book a Test Ride</a>
+                <a href="forms/find-dealer.html" class="find-dealer-btn">Find a Dealer</a>
             </div>
         </nav>
     </header>
@@ -41,30 +43,31 @@
     <section class="filter-section">
         <div class="filter-container">
             <div class="filter-group">
-                <label for="category">Category</label>
-                <select>
-                    <option>All Categories</option>
-                    <option>Sports</option>
-                    <option>Commuter</option>
-                    <option>Premium</option>
+                <label for="category-filter">Category</label>
+                <select id="category-filter">
+                    <option value="all">All Categories</option>
+                    <option value="sports">Sports</option>
+                    <option value="commuter">Commuter</option>
+                    <option value="premium">Premium</option>
+                    <option value="adventure">Adventure</option>
                 </select>
             </div>
             <div class="filter-group">
-                <label for="price">Price Range</label>
-                <select>
-                    <option>All Prices</option>
-                    <option>Under ₹50,000</option>
-                    <option>₹50,000 - ₹1,00,000</option>
-                    <option>Above ₹1,00,000</option>
+                <label for="price-filter">Price Range</label>
+                <select id="price-filter">
+                    <option value="all">All Prices</option>
+                    <option value="under-50000">Under ₹50,000</option>
+                    <option value="50000-100000">₹50,000 - ₹1,00,000</option>
+                    <option value="above-100000">Above ₹1,00,000</option>
                 </select>
             </div>
             <div class="filter-group">
-                <label for="engine">Engine Capacity</label>
-                <select>
-                    <option>All Engines</option>
-                    <option>100cc - 125cc</option>
-                    <option>125cc - 150cc</option>
-                    <option>Above 150cc</option>
+                <label for="engine-filter">Engine Capacity</label>
+                <select id="engine-filter">
+                    <option value="all">All Engines</option>
+                    <option value="100-125cc">100cc - 125cc</option>
+                    <option value="125-150cc">125cc - 150cc</option>
+                    <option value="150-plus">Above 150cc</option>
                 </select>
             </div>
         </div>
@@ -88,7 +91,7 @@
                     <span>LED Headlamp</span>
                     <span>Digital Console</span>
                 </div>
-                <button class="know-more-btn">Know More</button>
+                <a href="motorcycles/xtreme-160r.html" class="know-more-btn">Know More</a>
             </div>
         </div>
 
@@ -108,7 +111,7 @@
                     <span>LED Tail Lamp</span>
                     <span>Digital Speedometer</span>
                 </div>
-                <button class="know-more-btn">Know More</button>
+                <a href="motorcycles/splendor-plus.html" class="know-more-btn">Know More</a>
             </div>
         </div>
 
@@ -128,7 +131,7 @@
                     <span>Long Travel Suspension</span>
                     <span>ABS</span>
                 </div>
-                <button class="know-more-btn">Know More</button>
+                <a href="motorcycles/xpulse-200.html" class="know-more-btn">Know More</a>
             </div>
         </div>
 
@@ -148,7 +151,7 @@
                     <span>LED Lighting</span>
                     <span>Dual Channel ABS</span>
                 </div>
-                <button class="know-more-btn">Know More</button>
+                <a href="motorcycles/karizma-xmr.html" class="know-more-btn">Know More</a>
             </div>
         </div>
 
@@ -168,7 +171,7 @@
                     <span>LED Tail Lamp</span>
                     <span>Digital Speedometer</span>
                 </div>
-                <button class="know-more-btn">Know More</button>
+                <a href="motorcycles/super-splendor.html" class="know-more-btn">Know More</a>
             </div>
         </div>
 
@@ -188,7 +191,7 @@
                     <span>LED Headlamp</span>
                     <span>Digital Console</span>
                 </div>
-                <button class="know-more-btn">Know More</button>
+                <a href="motorcycles/xtreme-160r-4v.html" class="know-more-btn">Know More</a>
             </div>
         </div>
 
@@ -208,7 +211,7 @@
                     <span>Economical</span>
                     <span>Reliable</span>
                 </div>
-                <button class="know-more-btn">Know More</button>
+                <a href="motorcycles/hf-deluxe.html" class="know-more-btn">Know More</a>
             </div>
         </div>
 
@@ -228,7 +231,7 @@
                     <span>Off-road Ready</span>
                     <span>Dual Channel ABS</span>
                 </div>
-                <button class="know-more-btn">Know More</button>
+                <a href="motorcycles/xpulse-200-4v.html" class="know-more-btn">Know More</a>
             </div>
         </div>
     </section>
@@ -239,26 +242,26 @@
             <div class="footer-section">
                 <h4>About Us</h4>
                 <ul>
-                    <li><a href="">Board of Directors</a></li>
-                    <li><a href="">Leadership Team</a></li>
-                    <li><a href="">Key Policies</a></li>
+                    <li><a href="about/board-of-directors.html">Board of Directors</a></li>
+                    <li><a href="about/leadership-team.html">Leadership Team</a></li>
+                    <li><a href="about/key-policies.html">Key Policies</a></li>
                 </ul>
             </div>
             <div class="footer-section">
                 <h4>Support</h4>
                 <ul>
-                    <li><a href="">Contact Us</a></li>
-                    <li><a href="">Service Network</a></li>
-                    <li><a href="">FAQs</a></li>
+                    <li><a href="support/contact-us.html">Contact Us</a></li>
+                    <li><a href="support/service-network.html">Service Network</a></li>
+                    <li><a href="support/faqs.html">FAQs</a></li>
                 </ul>
             </div>
             <div class="footer-section">
                 <h4>Connect With Us</h4>
                 <div class="social-links">
-                    <a href=""><i class="fab fa-facebook"></i></a>
-                    <a href=""><i class="fab fa-twitter"></i></a>
-                    <a href=""><i class="fab fa-instagram"></i></a>
-                    <a href=""><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/HeroMotoCorpIndia/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/HeroMotoCorp"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/heromotocorp"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/user/TheHeromotocorp"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
         </div>
@@ -266,5 +269,7 @@
             <p>&#169; 2024 Hero MotoCorp Ltd. All Rights Reserved.</p>
         </div>
     </footer>
+    <script src="js/motorcycles.js"></script>
+    <script src="js/vehicle-advisor.js"></script>
 </body>
 </html> 

@@ -111,17 +111,6 @@
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 
-.find-center-btn {
-    background-color: transparent;
-    border: 2px solid #e4002b;
-    color: #e4002b;
-}
-
-.find-center-btn:hover {
-    background-color: #e4002b;
-    color: white;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-}
 
 /* Responsive Design for Service Page */
 @media (max-width: 768px) {
@@ -137,8 +126,7 @@
         grid-template-columns: 1fr;
     }
 
-    .book-now-btn,
-    .find-center-btn {
+    .book-now-btn{
         display: block;
         width: 80%;
         margin: 15px auto;

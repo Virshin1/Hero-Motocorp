@@ -1,0 +1,382 @@
+/* Bike Configurator Styles */
+.configurator-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.configurator-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.configurator-header h1 {
+    color: #1a1a1a;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.configurator-header p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+/* Model Selection */
+.model-selection {
+    margin-bottom: 2rem;
+}
+
+.model-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.model-option {
+    position: relative;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.model-option:hover {
+    border-color: #ff6b6b;
+    transform: translateY(-2px);
+}
+
+.model-option.selected {
+    border-color: #ff6b6b;
+    background-color: #fff5f5;
+}
+
+.model-option img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.model-option h3 {
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+}
+
+.model-option .price {
+    color: #ff6b6b;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Color Selection */
+.color-selection {
+    margin-bottom: 2rem;
+}
+
+.color-options {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.color-option {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #e0e0e0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.color-option:hover {
+    transform: scale(1.1);
+}
+
+.color-option.selected {
+    border-color: #1a1a1a;
+    box-shadow: 0 0 0 2px #ff6b6b;
+}
+
+/* Accessories Selection */
+.accessories-section {
+    margin-bottom: 2rem;
+}
+
+.accessories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.accessory-option {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.accessory-option:hover {
+    background-color: #f8f8f8;
+}
+
+.accessory-option.selected {
+    background-color: #fff5f5;
+    border-color: #ff6b6b;
+}
+
+.accessory-option img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-right: 1rem;
+}
+
+.accessory-info {
+    flex: 1;
+}
+
+.accessory-info h4 {
+    margin: 0;
+    color: #1a1a1a;
+}
+
+.accessory-info .price {
+    color: #ff6b6b;
+    font-weight: bold;
+}
+
+/* Financing Calculator */
+.financing-calculator {
+    background-color: #f8f8f8;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.financing-calculator h3 {
+    margin-bottom: 1.5rem;
+    color: #1a1a1a;
+}
+
+.calculator-inputs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    margin-bottom: 0.5rem;
+    color: #666;
+}
+
+.input-group input,
+.input-group select {
+    padding: 0.75rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.calculator-results {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.result-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.result-item .label {
+    color: #666;
+}
+
+.result-item .value {
+    color: #1a1a1a;
+    font-weight: bold;
+}
+
+/* Total Price Display */
+.total-price-section {
+    text-align: center;
+    padding: 2rem;
+    background-color: #fff5f5;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.total-price-section h2 {
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+}
+
+.total-price {
+    font-size: 2.5rem;
+    color: #ff6b6b;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .configurator-container {
+        padding: 1rem;
+    }
+
+    .model-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .calculator-inputs {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.configurator-container {
+    animation: fadeIn 0.5s ease-out;
+}
+
+.model-option,
+.accessory-option {
+    animation: fadeIn 0.3s ease-out;
+}
+
+/* Interactive Elements */
+button {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff5252;
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Form Elements */
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 4px;
+    background: #e0e0e0;
+    border-radius: 2px;
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #ff6b6b;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    transform: scale(1.1);
+}
+
+/* Loading States */
+.loading {
+    position: relative;
+    pointer-events: none;
+}
+
+.loading::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: inherit;
+}
+
+/* Success/Error Messages */
+.message {
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    animation: fadeIn 0.3s ease-out;
+}
+
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.configurator-hero {
+    padding-top: 3.5rem;
+    padding-bottom: 2rem;
+}
+.configurator-hero .container {
+    margin-top: 0;
+}
+.hero-content h1 {
+    margin-bottom: 1rem;
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.hero-content p {
+    margin-bottom: 0;
+    font-size: 1.25rem;
+    color: #222;
+} 

@@ -1,0 +1,415 @@
+/* Pricing Hero Section */
+.pricing-hero {
+    background-color: #f0f0f0;
+    padding: 6rem 5% 3rem;
+    text-align: center;
+    margin-top: 70px; /* Adjust for fixed header */
+}
+
+.pricing-hero h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.pricing-hero p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Pricing Tiers Section */
+.pricing-tiers {
+    padding: 3rem 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.tier-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tier-card h3 {
+    font-size: 1.8rem;
+    color: #e4002b;
+    margin-bottom: 1rem;
+}
+
+.tier-card .description {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.tier-card .cta-button {
+    display: inline-block;
+    background-color: #e4002b;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+.tier-card .cta-button:hover {
+    background-color: #c40026;
+}
+
+/* Price List Styles */
+.price-list {
+    margin: 1.5rem 0;
+    text-align: left;
+}
+
+.price-item {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.price-item:last-child {
+    border-bottom: none;
+}
+
+.price-item h4 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.price-item .price {
+    color: #e4002b;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Offers List Styles */
+.offers-list {
+    margin: 1.5rem 0;
+    text-align: left;
+}
+
+.offer-item {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.offer-item:last-child {
+    border-bottom: none;
+}
+
+.offer-item h4 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.offer-item p {
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.offer-item .validity {
+    color: #e4002b;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* EMI Calculator Styles */
+.emi-calculator {
+    margin: 1.5rem 0;
+    text-align: left;
+}
+
+.calculator-input {
+    margin-bottom: 1rem;
+}
+
+.calculator-input label {
+    display: block;
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.calculator-input input,
+.calculator-input select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.emi-result {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+.emi-result p {
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.emi-result span {
+    color: #e4002b;
+    font-weight: bold;
+}
+
+/* Featured Offers Section */
+.featured-offers {
+    padding: 3rem 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.featured-offers h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 2.5rem;
+}
+
+.offers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.offer-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.offer-card:hover {
+    transform: translateY(-5px);
+}
+
+.offer-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.offer-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    padding: 0 1rem;
+}
+
+.offer-card p {
+    color: #666;
+    font-size: 1rem;
+    padding: 0 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.offer-card .offer-details {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 1rem;
+}
+
+.offer-card .offer-cta {
+    display: inline-block;
+    background-color: #e4002b;
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    font-weight: bold;
+    margin: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.offer-card .offer-cta:hover {
+    background-color: #c40026;
+}
+
+.financing-calculator {
+    background: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.financing-calculator h3 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.calculator-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.calculator-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.calculator-form label {
+    display: block;
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.calculator-form input,
+.calculator-form select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.calculator-form input:read-only {
+    background-color: #f5f5f5;
+    cursor: not-allowed;
+}
+
+.calculation-results {
+    background: #f8f9fa;
+    border-radius: 4px;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.result-item:last-child {
+    border-bottom: none;
+}
+
+.result-item span:first-child {
+    color: #666;
+}
+
+.result-item span:last-child {
+    color: #e31837;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* Price Section Styles */
+.price-section {
+    background: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.price {
+    margin-bottom: 1.5rem;
+}
+
+.current-price {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #e31837;
+}
+
+.ex-showroom {
+    display: block;
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.offers {
+    background: #f8f9fa;
+    border-radius: 4px;
+    padding: 1.5rem;
+}
+
+.offers h3 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.offers ul {
+    list-style: none;
+    padding: 0;
+}
+
+.offers li {
+    color: #666;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.offers li:before {
+    content: "✓";
+    color: #e31837;
+    position: absolute;
+    left: 0;
+} 
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .pricing-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .pricing-hero p {
+        font-size: 1rem;
+    }
+
+    .pricing-tiers,
+    .offers-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tier-card {
+        padding: 1.5rem;
+    }
+
+    .tier-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .tier-card .cta-button {
+        width: 100%;
+    }
+
+    .featured-offers h2 {
+        font-size: 2rem;
+    }
+
+    .calculator-input input,
+    .calculator-input select {
+        font-size: 16px; /* Prevent zoom on mobile */
+    }
+} 

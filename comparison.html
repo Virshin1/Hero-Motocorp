@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Comparison - Hero MotoCorp</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/comparison.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="main-nav">
+            <div class="logo">
+                <a href="index.html"><img src="https://www.heromotocorp.com/content/dam/hero-aem-website/brand/logo/logo.svg" alt="Hero MotoCorp Logo"></a>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="motorcycles.html">Motorcycles</a></li>
+                    <li><a href="scooters.html">Scooters</a></li>
+                    <li><a href="accessories.html">Accessories</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="nav-buttons">
+                <a href="forms/test-ride.html" class="login-btn">Book a Test Ride</a>
+                <a href="forms/find-dealer.html" class="find-dealer-btn">Find a Dealer</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Comparison Hero Section -->
+    <section class="comparison-hero">
+        <h1>Compare Vehicles</h1>
+        <p>Find the perfect Hero vehicle by comparing features side-by-side.</p>
+    </section>
+
+    <!-- Comparison Tool Section -->
+    <section class="comparison-tool">
+        <div class="select-vehicles">
+            <select id="vehicle1">
+                <option value="">Select Vehicle 1</option>
+                <optgroup label="Motorcycles">
+                    <option value="xtreme-160r">Xtreme 160R</option>
+                    <option value="xtreme-160r-4v">Xtreme 160R 4V</option>
+                    <option value="splendor-plus">Splendor Plus</option>
+                    <option value="xpulse-200">XPulse 200</option>
+                    <option value="xpulse-200-4v">XPulse 200 4V</option>
+                    <option value="karizma-xmr">Karizma XMR</option>
+                    <option value="super-splendor">Super Splendor</option>
+                    <option value="hf-deluxe">HF Deluxe</option>
+                </optgroup>
+                <optgroup label="Scooters">
+                    <option value="maestro-edge-125">Maestro Edge 125</option>
+                    <option value="destini-125">Destini 125</option>
+                    <option value="pleasure-plus">Pleasure Plus</option>
+                    <option value="vida-v1">Vida V1</option>
+                </optgroup>
+            </select>
+            <span>vs</span>
+            <select id="vehicle2">
+                <option value="">Select Vehicle 2</option>
+                <optgroup label="Motorcycles">
+                    <option value="xtreme-160r">Xtreme 160R</option>
+                    <option value="xtreme-160r-4v">Xtreme 160R 4V</option>
+                    <option value="splendor-plus">Splendor Plus</option>
+                    <option value="xpulse-200">XPulse 200</option>
+                    <option value="xpulse-200-4v">XPulse 200 4V</option>
+                    <option value="karizma-xmr">Karizma XMR</option>
+                    <option value="super-splendor">Super Splendor</option>
+                    <option value="hf-deluxe">HF Deluxe</option>
+                </optgroup>
+                <optgroup label="Scooters">
+                    <option value="maestro-edge-125">Maestro Edge 125</option>
+                    <option value="destini-125">Destini 125</option>
+                    <option value="pleasure-plus">Pleasure Plus</option>
+                    <option value="vida-v1">Vida V1</option>
+                </optgroup>
+            </select>
+            <button class="compare-btn">Compare</button>
+        </div>
+
+        <div class="comparison-results">
+            <!-- Comparison results will be displayed here -->
+            <div class="comparison-table">
+                <div class="table-header">
+                    <div class="header-item">Feature</div>
+                    <div class="header-item" id="vehicle1-name">Vehicle 1</div>
+                    <div class="header-item" id="vehicle2-name">Vehicle 2</div>
+                </div>
+                <div class="table-row">
+                    <div class="row-header">Engine Type</div>
+                    <div class="row-data" id="vehicle1-engine">-</div>
+                    <div class="row-data" id="vehicle2-engine">-</div>
+                </div>
+                <div class="table-row">
+                    <div class="row-header">Displacement</div>
+                    <div class="row-data" id="vehicle1-displacement">-</div>
+                    <div class="row-data" id="vehicle2-displacement">-</div>
+                </div>
+                <div class="table-row">
+                    <div class="row-header">Max Power</div>
+                    <div class="row-data" id="vehicle1-power">-</div>
+                    <div class="row-data" id="vehicle2-power">-</div>
+                </div>
+                <div class="table-row">
+                    <div class="row-header">Max Torque</div>
+                    <div class="row-data" id="vehicle1-torque">-</div>
+                    <div class="row-data" id="vehicle2-torque">-</div>
+                </div>
+                <div class="table-row">
+                    <div class="row-header">Transmission</div>
+                    <div class="row-data" id="vehicle1-transmission">-</div>
+                    <div class="row-data" id="vehicle2-transmission">-</div>
+                </div>
+                <div class="table-row">
+                    <div class="row-header">Fuel Tank Capacity</div>
+                    <div class="row-data" id="vehicle1-fuel">-</div>
+                    <div class="row-data" id="vehicle2-fuel">-</div>
+                </div>
+                <div class="table-row">
+                    <div class="row-header">Mileage</div>
+                    <div class="row-data" id="vehicle1-mileage">-</div>
+                    <div class="row-data" id="vehicle2-mileage">-</div>
+                </div>
+                <div class="table-row">
+                    <div class="row-header">Price</div>
+                    <div class="row-data" id="vehicle1-price">-</div>
+                    <div class="row-data" id="vehicle2-price">-</div>
+                </div>
+                <div class="table-row">
+                    <div class="row-header">Colors Available</div>
+                    <div class="row-data" id="vehicle1-colors">-</div>
+                    <div class="row-data" id="vehicle2-colors">-</div>
+                </div>
+                <div class="table-row">
+                    <div class="row-header">Warranty</div>
+                    <div class="row-data" id="vehicle1-warranty">-</div>
+                    <div class="row-data" id="vehicle2-warranty">-</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/comparison.js"></script>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="about/board-of-directors.html">Board of Directors</a></li>
+                    <li><a href="about/leadership-team.html">Leadership Team</a></li>
+                    <li><a href="about/key-policies.html">Key Policies</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="support/contact-us.html">Contact Us</a></li>
+                    <li><a href="support/service-network.html">Service Network</a></li>
+                    <li><a href="support/faqs.html">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/HeroMotoCorpIndia/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/HeroMotoCorp"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/heromotocorp"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/user/TheHeromotocorp"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&#169; 2024 Hero MotoCorp Ltd. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html> 

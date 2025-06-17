@@ -158,6 +158,10 @@
     background-color: #cc0000;
 }
 
+a{
+    text-decoration: none;
+}
+
 /* Responsive Design for Scooters Page */
 @media (max-width: 768px) {
     .scooters-hero h1 {
